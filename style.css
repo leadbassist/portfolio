@@ -1,76 +1,173 @@
 .quote-text {
-    margin-top: 30px;
-    font-size: 2rem;
-    color: white;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: white;
 }
 
 .quote-author {
-    margin-top: 15px;
-    font-size: 2rem;
-    font-weight: 400;
-    font-style: italic;
-    color: white;
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
 }
 
 .button-container {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 button1 {
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    height: 2.5rem;
-    border: none;
-    border-radius: 10px;
-    color: rgb(32, 30, 30);
-    background: rgb(236, 233, 233);
-    outline: none;
-    padding: 0.5rem 1.8rem;
-    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65)
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: rgb(32, 30, 30);
+  background: rgb(236, 233, 233);
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
 }
 
 button1:hover {
-    filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 button1:active {
-    transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65)
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+/* carousel CSS */
+.carousel {
+  position: relative;
+  height: 300px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover - dynamically resizes the image based on the window size */
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  background: lightgreen;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  /* the arrow STARTS from halfway and goes downward. this doesnt position the arrow image properly  */
+  /* transform: translateY(-50%); will move the image RELATIVE to its position by 50% upwards so that */
+  /* HALF of the image is 50% UPWARDS from the HALWAY POINT of the main image */
+  /* the other HALF of the image is 50% DOWNWARDS from the HALFWAY POINT of the main image */
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: -40px;
+}
+
+.carousel__button--right {
+  right: -40px;
+}
+
+.carousel__button img {
+  width: 30px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.is-hidden {
+  display: none;
+}
+
+/* end of carousel CSS */
+
+.center-title {
+  text-align: center;
 }
 
 .twitter-button:hover {
-    color: #38a1f3;
+  color: #38a1f3;
 }
 
 .fa-twitter {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* Loader */
 .loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #333;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  100% {
+    transform: rotate(360deg);
   }
+}
 
 /* Media Query: Tablet or smaller */
 @media screen and (max-width: 1000px) {
-    .quote-container {
-        margin: auto 10px;
-    }
+  .quote-container {
+    margin: auto 10px;
+  }
 
-    .quote-text {
-        font-size: 2.5rem;
-    }
+  .quote-text {
+    font-size: 2.5rem;
+  }
 }
