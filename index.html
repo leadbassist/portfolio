@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <title>Shah Ahmed - Portfolio</title>
+    <title>Sir Silos Benet - Portfolio</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Font Awesome -->
@@ -26,7 +26,7 @@
           <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
               <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://www.linkedin.com/in/shah-m-ahmed/">
                 <!-- Nav Title -->
-                Shah Ahmed
+                Sir Silos Benet
               </a>
               <!-- Hamburger Menu (Mobile) -->
               <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
@@ -34,36 +34,6 @@
                 <i class="text-white fas fa-bars"></i>
               </button>
           </div>
-        <!-- Nav Right Side -->
-        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-          <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://www.linkedin.com/in/shah-m-ahmed/" target="_blank">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-linkedin-in text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">LinkedIn</span>
-            </a>
-          </li>
-          <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://twitter.com/justaanalyst" target="_blank">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Tweet</span>
-            </a>
-          </li>
-          <!-- Social Media Button -->
-          <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-              href="https://github.com/leadbassist" target="_blank">
-              <!-- Icon -->
-              <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
-              <span class="lg:hidden inline-block ml-2">Github</span>
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </nav>
@@ -85,31 +55,36 @@
           <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
             <div class="pr-12">
               <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
-                G'day. Welcome to an aspiring portal.
+                Welcome to my portfolio!
               </h1>
+              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
+                <span class="text-white text-2xl" style="margin-top:18px; display:block; font-weight:normal;">Check out my skillset, the projects I am involved in and more.</span>
                 <!-- ADDED CONTENT BY SHAH -->
                 <!-- Quote -->
                 <div class="text-white" id="quote-container" data-aos="fade-right">
                   <!-- Quote -->
-                  <div class="quote-text">
+                  <div class="quote-text" style="margin-top: 40px;">
                       <i class="fas fa-quote-left"></i>
-                      <span id="quote"></span>
+                      <span id="quote" style="display:block; font-size:2.2rem; line-height:1.3; margin-top:16px;"></span>
+                      <!-- BrainyQuote Today's Quote Feed -->
+                      <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
                   </div>
                   <!-- Author -->
-                  <div class="text-white quote-author">
-                      <span id="author"></span> 
+                  <div class="text-white quote-author" style="margin-top: 10px;">
+                      <span id="author" style="font-weight:bold; font-size:1.3rem;"> </span>
                   </div>
-                  <!-- Buttons -->
-                  <div class="text-white button-container">
-                      <button1 class="twitter-button" id="twitter" title="Tweet this!">
-                          <i class="fab fa-twitter"></i>
-                      </button1>
-                      <button1 id="new-quote">Another Quote</button1>
-                  </div>
+                  <script>
+                    // Wait for BrainyQuote to load and then style the author
+                    window.addEventListener('DOMContentLoaded', function() {
+                      setTimeout(function() {
+                        var authorSpan = document.getElementById('author');
+                        if (authorSpan && authorSpan.textContent.trim() !== '') {
+                          authorSpan.innerHTML = '- ' + '<span style="font-weight:bold;">' + authorSpan.textContent.trim() + '</span>';
+                        }
+                      }, 800);
+                    });
+                  </script>
                 </div>
-
-                <!-- Loader -->
-                <div class="loader" id="loader"></div>
             </div>
           </div>
         </div>
@@ -198,6 +173,122 @@
         <!-- Text Box and Card Container -->
         <div class="flex flex-wrap items-center mt-32">
           <!-- Text Box Container -->
+                  <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-in-right">
+                    <!-- Text Box -->
+                    <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+                      <!-- Icon -->
+                      <i class="fas fa-star text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl mb-2 font-semibold leading-normal text_shadow">
+                      Canadian Citizenship App
+                    </h3>
+                    <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                      I created and published the Canadian Citizenship App, available on both Google Play Store and Apple Store. This app is designed to help users practice for the Canadian Citizenship Test with a tailored experience that improves their performance and boosts their chances of passing the test.
+                    </p>
+                    <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                      The app features a wide range of practice questions, progress tracking, and smart feedback to guide users through their preparation journey.
+                    </p>
+                    <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                      Whether you're preparing for your test or just want to learn more about Canadian citizenship, this app is a valuable resource to help you succeed.
+                    </p>
+          </div>
+
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://i.ibb.co/67NBxpJh/cadcittestapppic.jpg"
+                class="w-full align-middle rounded-t-lg"
+              />
+              <blockquote class="relative p-8 mb-4">
+                <!-- Making Polygon Shape in Card -->
+                <svg
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block"
+                  style="height: 95px; top: -94px;"
+                >
+                  <polygon
+                    points="-30,95 583,95 583,65"
+                    class="text-orange-500 fill-current"
+                  ></polygon>
+                </svg>
+                <!-- Text Box -->
+                <h4 class="text-xl font-bold text-white">
+                  This project uses
+                </h4>
+                <p class="text-md font-light mt-2 text-white">
+                  React Native, Expo, and other modern libraries to ensure a smooth and reliable experience across devices.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Box and Card Container 2 -->
+        <div class="flex flex-wrap items-center mt-32">
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-right" data-aos-delay="1000">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <img
+                alt="..."
+                src="https://i.ibb.co/ThRQvRC/JSpic.jpg"
+                class="w-full align-middle rounded-t-lg"
+              />
+              <blockquote class="relative p-8 mb-4">
+                <!-- Making Polygon Shape in Card -->
+                <svg
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 583 95"
+                  class="absolute left-0 w-full block"
+                  style="height: 95px; top: -94px;"
+                >
+                  <polygon
+                    points="-30,95 583,95 583,65"
+                    class="text-orange-500 fill-current"
+                  ></polygon>
+                </svg>
+                <!-- Text Box -->
+                <h3 class="text-xl font-bold text-white">
+                  This project uses
+                </h3>
+                <p class="text-md font-light mt-2 text-white">
+                  React, React Native, Python, Jupyter Notebook, and Expo
+                </p>
+              </blockquote>
+            </div>
+          </div>
+
+          <!-- Text Box Container -->
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-in-left">
+            <!-- Text Box -->
+            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal text_shadow">
+              Crypto Backtesting Platform
+            </h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              I spent several months developing a comprehensive crypto backtesting platform that analyzes historical data for the top 50 cryptocurrencies. This project was a deep dive into quantitative analysis, requiring the implementation and fine-tuning of a wide range of trading strategies including MACD, RSI, SMA/EMA, Mean Reversion, and Bollinger Bands, among others.
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              The platform allows me to select any starting point in the historical data and simulate how each strategy would perform, instantly calculating whether I would have made a profit or loss by following that approach. Each strategy required careful research, testing, and optimization to ensure realistic results.
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              To make this tool accessible and powerful, I built it across three platforms: a Jupyter Notebook version for rapid calculations and data exploration, a web-based interface for ease of use, and a mobile app for on-the-go analysis. This multi-platform approach demanded expertise in React, React Native, Python, and Expo, and resulted in a robust solution for anyone interested in crypto strategy backtesting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Text Box and Card Container 3 -->
+        <div class="flex flex-wrap items-center mt-32">
+          <!-- Text Box Container -->
           <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-in-right">
             <!-- Text Box -->
             <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
@@ -258,7 +349,7 @@
           </div>
         </div>
 
-        <!-- Text Box and Card Container 2 -->
+        <!-- Text Box and Card Container 4 -->
         <div class="flex flex-wrap items-center mt-32">
           <!-- Image Cap & Text Card -->
           <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-right" data-aos-delay="1000">
@@ -591,9 +682,9 @@
           <div class="w-full lg:w-6/12 px-4">
             <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
               <div class="flex-auto p-5 lg:p-10">
-                <h4 class="text-2xl font-semibold center-title text_shadow">Contacting Shah</h4>
+                <h4 class="text-2xl font-semibold center-title text_shadow">Feedback? Wanna say hi?
                 <p class="leading-relaxed mt-1 mb-4 text-gray-600">
-                  Please fill the form below with your contact details and reason for contact. I will get back to you ASAP.
+                  Fill out this form and I will reply back ASAP!
                 </p>
                 <form action="https://formspree.io/f/mzbognal" method="POST">
                   <!-- Name -->
