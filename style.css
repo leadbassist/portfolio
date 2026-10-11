@@ -95,6 +95,8 @@ footer { padding: 1.5rem 0; background: #fff; }.footer-content { display: flex; 
 .rusk-feature .game-preview { background: #9c4d5f; }
 .game-preview img,
 .pong-preview img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.pong-feature .game-preview img { object-position: center 36%; }
+.rusk-feature .game-preview img { object-position: center center; }
 .game-feature:hover .game-preview img { transform: scale(1.035); }
 .game-badge,
 .pong-badge {
